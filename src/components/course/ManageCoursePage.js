@@ -9,7 +9,7 @@ class ManageCoursePage extends React.Component {
     super(props, context);
 
     this.state = {
-      course: Object.assign({}, props.initialCourse),
+      course: Object.assign({}, props.course),
       errors: {}
     };
 
@@ -36,7 +36,7 @@ class ManageCoursePage extends React.Component {
 }
 
 ManageCoursePage.propTypes = {
-  initialCourse: PropTypes.object.isRequired,
+  course: PropTypes.object.isRequired,
   authors: PropTypes.array.isRequired
 };
 
